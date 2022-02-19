@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>The Matsunoki Treebank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="headline1">
+<h1>The Matsunoki Treebank &ndash; a parsed corpus of Tsugaru-ben folktales</h1>
+</div>
+
+<ul class="navbar">
+<li class="active">Front page<br><a href="front_page_Japanese.html">フロント・ページ</a>
+<li><a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/overview.sh?db=Matsunoki">Search interface<br>検索インターフェース</a>
+<li><a href="acknowledgements.html">Acknowledgements of support</a><br><a href="acknowledgements_Japanese.html">研究支援について</a>
+<li><a href="https://oncoj.orinst.ox.ac.uk/">Parsed Corpora Portal<br>コーパス・ポータルサイト</a>
+</ul>
+
+<h1>Front Page</h1>
+
+<p align="justify">
+The Matsunoki Treebank is a corpus of Tsugaru-ben folktales
+with hand worked tree analysis.
+Tsugaru-ben is a dialect spoken in the Tsugaru region of Japan.
+The Tsugaru region is on the west side of Aomori prefecture,
+the northernmost prefecture on Japan's mainland of Honshu.
+Highlights of the corpus include:
+</p>
+
+<ul>
+<li>(Hepburn) romanisation
+<li>English glosses
+<li>full lemmatisation for Tsugaru-ben words linked to dictionary word sense definitions
+<li>labelled constituent structure
+<li>assignments of grammatical function
+<li>zero elements
+<li>information to resolve anaphoric dependencies
+</ul>
+
+<p align="justify">
+Further results &mdash; notably, dependency graphs &mdash; derived from the analysis
+can be seen with the search interface.
+</p>
+
+<p align="justify">
+The name Matsunoki,
+meaning &lsquo;pine tree&rsquo; in English,
+derives from the frequent appearance of pine trees in
+the folktale stories that make up the data of the corpus. 
+</p>
+
+<h2>About the corpus data</h2>
+
+<p align="justify">
+The corpus data comes from audio samples spoken by native speakers of Tsugaru-ben.
+The samples consist of readings of folktales related to the Tsugaru region,
+which are presented in the dialect.
+There are 26 readings in total,
+representing nearly four hours of spoken data.
+</p>
+
+<p align="justify">
+The speakers are all members of the &ldquo;Wa No Hanashiko&rdquo; group.
+Tsuri Sato (佐藤ツリ) who is the representative of this group,
+started the activity in 2003 with the aim of handing down folktales of the Tsugaru region.
+The group is based in the Hirosaki area and has approximately 300 members.
+The group tells stories in Tsugaruben during visits to retirement houses,
+community centers, and events held by the social welfare council.
+They also share folktales in this region on the local TV station
+and work with Hakuryu Shibutani (澁谷白龍)
+who is a researcher of dialect and Senryu which is a form of short poetry (Megumi 2021).
+</p>
+
+<p align="justify">
+Using folktale data has strengths and weaknesses. One advantage is the presence of rich
+vocabulary. Folktales contain unique and old vocabulary,
+so folktales are a good resource to initiate a Tsugaruben corpus and word database.
+However, due to the nature of folktales, some of the words or phrases
+which appear in the Tsugaruben folktales are exaggerated
+Tsugaruben or they are Tsugaruben that is not in daily use.
+For this reason, some examples in The Matsunoki Treebank can be said to be unnatural,
+and not fully representative of Tsugaruben as it is spoken today.
+</p>
+
+<h2>About the annotation</h2>
+
+<p align="justify">
+Hepburn is used as the system of romanization
+because of its compatibility with the suite of programs and grammar files used
+during the creation of the morphological analysis.
+The method of word segmentation and morphological analysis uses
+the <a href="http://www2.aasa.ac.jp/people/smiyata/CHILDESmanual/datafiles/wakachi2002v8/00index.html">WAKACHI2002</a> (Miyata 2018)
+inventory of word class and morpheme codes.
+</p>
+
+<p align="justify">
+The tree annotation is based on <a href="https://jptrees.github.io/">The Kusunoki Treebank</a> (Kainoki 2022),
+a parsed corpus of contemporary Japanese.
+Syntactic structure is represented with labelled parentheses in the style of the Penn Treebank (Bies et al. 1995).
+More particularly, the Penn Historical Corpora scheme (Santorini 2010) has informed the &lsquo;look&rsquo; of the annotation.
+This includes:</p>
+<ul>
+<li>adoption of the <a href="http://corpussearch.sourceforge.net/CS-manual/YourCorpus.html">CorpusSearch format</a> (Randall 2009) as the underlying encoding,</li>
+<li>not having any explicit verb phrase structure (although verb phrase structure is implicitly present when there are interpretive consequences),</li>
+<li>the use of <tt>IP</tt>, <tt>ADVP</tt>, <tt>NP</tt>, and <tt>PP</tt> tag labels,</li>
+<li>the presentation of phrase conjunction structure with <tt>CONJP</tt> layers, and</li>
+<li>the marking of function for all clausal nodes and all clause level constituents.</li>
+</ul>
+
+<p align="justify">
+Annotation practice strives for observational adequacy.
+The aim is to present a consistent linguistic analysis for each attestation of an identifiable linguistic relation or process.
+The annotation also offers syntactic analysis for the subsequent generation of meaning representations using the methods of <a href="http://www.compling.jp/ajb129/ts.html">Treebank Semantics</a> (Butler 2015).
+</p>
+
+<h2>Search Interface</h2>
+
+<p align="justify">
+The Matsunoki Treebank is associated with a powerful user <b><a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/kusunoki.sh">interface</a></b>
+that enables search using virtually any aspect of the annotation.
+Results of specific searches can be downloaded in the form of annotated data.
+The source data to which the search interface links is being updated constantly to reflect improvements in analysis.
+</p>
+
+<h2>About the dictionary</h2>
+
+<p align="justify">
+The search interface includes an integrated dictionary function
+that links English glosses of the annotation to word sense definitions disambiguated with numbers.
+For example, <tt>run1</tt> links up to the definition for a human running,
+while <tt>run2</tt> links up to the definition for driving a vehicle.
+Enabling &ldquo;word&rdquo; mode by clicking &ldquo;word&rdquo; at the top of the interface
+shows correspondences between Tsugaru-ben words and their word sense definitions for all of the texts. 
+</p>
+
+<!--
+
+<h2>Using the corpus for advanced research</h2>
+
+<p align="justify">
+The available on-line interface is a powerful and flexible tool sufficient for many research purposes, but note that the data on which it operates is updated in real time.
+For extended research projects it is often advisable to download a release version for use off-line.
+This not only provides the advanced researcher a stable set of data,
+but also allows for manipulation of the data to reflect analyses that are not included in the present online corpus
+but are necessary for a given research project.
+</p>
+
+<h2>Data format</h2>
+
+<p align="justify">
+The working data format of The Matsunoki Treebank is
+the <tt>.cha</tt> format required by the <a href="https://dali.talkbank.org/clan/">CLAN programs</a> of the CHILDES project.
+The content of the <tt>.cha</tt> files is then merged with tree information from The Kainoki Treebank
+to create trees in the bracketed format required by <a href="http://corpussearch.sourceforge.net/CS-manual/YourCorpus.html">CorpusSearch</a>.
+</p>
+
+<h2>Mistakes</h2>
+
+<p align="justify">
+As with any annotated text corpus, there are mistakes in The Matsunoki Treebank.
+The corpus is ongoing work and is under continuous improvement and correction.
+Mistakes will be corrected as they become apparent and as time allows.
+We will be grateful to be made aware of mistakes and will endeavour to eliminate them with the help of users (<a href="contact.html">contact</a>).
+</p>
+
+-->
+
+<h2>Attribution</h2>
+
+<p align="justify">
+Presentations of research results using the The Matsunoki Treebank should include
+a citation taking the general form of the example below (with appropriate modifications depending on the date of access):
+</p>
+
+<blockquote><b>Gwidt, Vance, Mikoto Ono, Yuka Ito, and Alastair Butler (2022) &ldquo;The Matsunoki Treebank &ndash; a parsed corpus of Tsugaru-ben folktales&rdquo; https://tsugaruben.github.io (accessed 9 January 2022).</b></blockquote>
+
+<h2>Terms of use</h2>
+
+<p align="justify">
+This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.</p>
+
+<p style="padding-left: 450px;">
+<a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons License" /></a>
+</p>
+
+<br>
+<br>
+<br>
+
+</body>
+</html>
