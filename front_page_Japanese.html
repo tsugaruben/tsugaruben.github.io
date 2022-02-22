@@ -62,30 +62,23 @@
 </p>
 
 <p align="justify">
-Using folktale data has strengths and weaknesses. One advantage is the presence of rich
-vocabulary. Folktales contain unique and old vocabulary,
-so folktales are a good resource to initiate a Tsugaru-ben corpus and word database.
-However, due to the nature of folktales, some of the words or phrases
-which appear in the Tsugaru-ben folktales are exaggerated
-Tsugaru-ben or they are Tsugaru-ben that is not in daily use.
-For this reason, some examples in The Matsunoki Treebank can be said to be unnatural,
-and not fully representative of Tsugaru-ben as it is spoken today.
+コーパスのデータに津軽弁の民話を使用することには、メリットとデメリットがあります。
+メリットの一つは、民話の持つ豊かな津軽弁語彙です。
+民話は津軽弁の独特で古い語彙を含んでおり、津軽弁のコーパス・データベースを作成し始める際の良いデータ源です。
+しかしながら、民話の特質上、民話に現れる津軽弁の中には誇張された津軽弁や、日常的にはあまり使用されていない津軽弁もあります。
+このような理由でマツノキツリーバンクに現れる津軽弁の例の中には、不自然と思われるものや現在使用されている津軽弁を正確に表していないと考えられるものも含まれますが、ご了承ください。
 </p>
 
 <h2>About the annotation</h2>
 
 <p align="justify">
-Hepburn is used as the system of romanization
-because of its compatibility with the suite of programs and grammar files used
-during the creation of the morphological analysis.
-The method of word segmentation and morphological analysis uses
-the <a href="http://www2.aasa.ac.jp/people/smiyata/CHILDESmanual/datafiles/wakachi2002v8/00index.html">WAKACHI2002</a> (Miyata 2018)
-inventory of word class and morpheme codes.
+津軽弁をローマ字表記にする際にはヘボン式ローマ字が使用されています。
+これはヘボン式ローマ字が、形態素分析を行う際に使用されているプログラムとファイルとの互換性を持っているためです。
+津軽弁の分かち書きと形態素分析には  <a href="http://www2.aasa.ac.jp/people/smiyata/CHILDESmanual/datafiles/wakachi2002v8/00index.html">WAKACHI2002</a> (Miyata 2018)の品詞コードと形態素コードが使用されています。
 </p>
 
 <p align="justify">
-The tree annotation is based on <a href="https://jptrees.github.io/">The Kusunoki Treebank</a> (Kainoki 2022),
-a parsed corpus of contemporary Japanese.
+ツリー分析には現代日本語コーパスであるカイノキツリーバンクに基づいています。 <a href="https://jptrees.github.io/">The Kusunoki Treebank</a> (Kainoki 2022)
 Syntactic structure is represented with labelled parentheses in the style of the Penn Treebank (Bies et al. 1995).
 More particularly, the Penn Historical Corpora scheme (Santorini 2010) has informed the &lsquo;look&rsquo; of the annotation.
 This includes:</p>
@@ -98,29 +91,31 @@ This includes:</p>
 </ul>
 
 <p align="justify">
-Annotation practice strives for observational adequacy.
-The aim is to present a consistent linguistic analysis for each attestation of an identifiable linguistic relation or process.
-The annotation also offers syntactic analysis for the subsequent generation of meaning representations using the methods of <a href="http://www.compling.jp/ajb129/ts.html">Treebank Semantics</a> (Butler 2015).
+アノテーションは観察的妥当性を得るために努力して行われており、
+同一視することのできる言語の構成要素同士の関係、あるいは言語に関係するプロセスのそれぞれの証明に一貫した言語分析を表示することをめざしています。
+またアノテーションは
+ <a href="http://www.compling.jp/ajb129/ts.html">Treebank Semantics</a> (Butler 2015)の手法を使用することで、後続する意味表現の生成のための構文解析を提供します。
 </p>
 
 <h2>Search Interface</h2>
 
 <p align="justify">
-The Matsunoki Treebank is associated with a powerful user <b><a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/kusunoki.sh">interface</a></b>
-that enables search using virtually any aspect of the annotation.
-Results of specific searches can be downloaded in the form of annotated data.
-The source data to which the search interface links is being updated constantly to reflect improvements in analysis.
+マツノキツリーバンクは強力なユーザー <b><a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/kusunoki.sh">interface</a></b>
+と結びついています。
+このユーザーインターフェースを使用することで、コーパス内にあるアノテーションのあらゆる側面を使用して検索することができます。
+特定の検索結果をアノテーションされた形式でダウンロードすることもできます。
+検索インターフェースとリンクしているソースデータは、分析における改善点を反映するために常に更新されています。
 </p>
 
 <h2>About the dictionary</h2>
 
 <p align="justify">
-The search interface includes an integrated dictionary function
-that links English glosses of the annotation to word sense definitions disambiguated with numbers.
-For example, <tt>run1</tt> links up to the definition for a human running,
-while <tt>run2</tt> links up to the definition for driving a vehicle.
-Enabling &ldquo;word&rdquo; mode by clicking &ldquo;word&rdquo; at the top of the interface
-shows correspondences between Tsugaru-ben words and their word sense definitions for all of the texts. 
+検索インターフェースは統合された辞書機能を含んでいます。
+この辞書機能はコーパス内の英語による語句注釈と結びついており、数字により津軽弁語彙の意味が区別されています。
+一例として  <tt>run1</tt> は、辞書データベース内の人間が走るという行為を表す定義と結びついており、
+一方で <tt>run2</tt> は車を運転するという行為を表す定義と結びついています。
+&ldquo;ワード&rdquo; モードはインターフェースの上部にある &ldquo;word&rdquo; ボタンを押すことで使用できます。
+このモードを使用することで、文中の津軽弁語彙とその語彙の定義を見ることができます。
 </p>
 
 <!--
